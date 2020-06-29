@@ -5,15 +5,20 @@ typora-root-url: md_pic
 
 # Lora Soil Sensor Project
 
-> Version:	V1.2
-> Author：	Vincent
-> Create Date：	2020/6/16
-> Note：
->
-> - 2020/6/24	v1.1: Repair some pictures.
-> 2020/6/29         v1.2: Change doc in INFO and pic num.				 by Vincent
+> - 
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152218046](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152218046.png)
+```c++
+/*
+Version:		V1.2
+Author:			Vincent
+Create Date:	2020/6/16
+Note：
+	2020/6/24	v1.1: Repair some pictures.
+	2020/6/29	v1.2: Change doc in INFO and pic num.				 by Vincent
+*/
+```
+
+![1](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152218046.png)
 
 
 
@@ -29,7 +34,7 @@ typora-root-url: md_pic
 
 [Makerfabs Wiki](https://makerfabs.com/wiki/index.php?title=Main_Page)
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624154757732](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624154757732.png)
+![2](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624154757732.png)
 
 Makerfabs provides two Lora communication solutions, MakePython Lora and Maduino Lora. This experiment introduces how to use SX127X series module for Lora transceiver communication across platforms.And realize a soil moisture detection project:
 
@@ -60,11 +65,11 @@ gate->wifi: Humidity value (response)
 
 -  Connect the Soil Moisture Sensor to PC through the download line and press the Moisture Sensor on the serial port welding plate with your hand on the other end.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152408238](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152408238.png)
+![3](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152408238.png)
 
 - After saving, select "Tools", select "Development Board" Arduino Pro or Pro min, select processor ATmega328p 3.3V 8MHz, and select corresponding serial port.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111248264](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111248264.png)
+![4](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111248264.png)
 
 - Open the serial port monitor and click "Upload" from the IDE interface.
 
@@ -84,29 +89,29 @@ gate->wifi: Humidity value (response)
 
 - Then stick the soil sensor into the pot.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152707457](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152707457.png)
+![5](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152707457.png)
 
 ## 2 MicroPython Lora
 
 - Plug the ESP32 and Lora extension boards together.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170934064](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170934064.png)
+![6](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170934064.png)
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170946542](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170946542.png)
+![7](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619170946542.png)
 
 - Connect MakePython ESP32 to your PC, open uPyCraft, and select connect to the serial port.
 - Firmware will be prompted if it has not been burned before or for other reasons.Board selects ESP32, BURN_addr selects 0x1000, Erase_Flash selects Yes, com selects the port number.Firmware Choose Users, click Choose to Choose ESP32-IDF3-20190125-v1.10.bin in the folder.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619152601330](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619152601330.png)
+![8](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200619152601330.png)
 
 - Download all python programs ending in.py from the \LoraS2G\workSpace to ESP32.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111415256](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111415256.png)
+![9](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624111415256.png)
 
 - Press the RST button on ESP32 to reset the development board.The serial monitor displays the boot self - check information.
 - If all goes well, the serial port will have a log of the wifi connection and display on the ESP32'S LCD screen.
 
-![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152537711](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152537711.png)
+![10](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152537711.png)
 
 - The first IP is the IP address that the node connects to WiFi.
 
@@ -114,7 +119,7 @@ gate->wifi: Humidity value (response)
 
 - Wait about three seconds and the page will show the soil moisture value.(The sending cycle of soil module is 3 seconds)
 
-  ![https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624153151610](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624153151610.png)
+  ![11](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624153151610.png)
 
 - You can also try using your phone to connect to WiFi and type in the same url so you can check the soil moisture anytime, anywhere.
 
