@@ -22,13 +22,13 @@ ip = "ip get wrong"
 def web_page(adc):
   status = "UNKNOW"
   if adc > 800:
-    soil_word = """<p style="background:blue" width:250px>TOO DRY</p>"""
+    soil_word = """<h1 style="background:blue;color:white" width:250px>TOO DRY</h1>"""
   elif adc > 600:
-    soil_word = """<p style="background:green" width:250px>VERY GOOD!</p>"""
+    soil_word = """<h1 style="background:green;color:white" width:250px>VERY GOOD!</h1>"""
   elif adc > 200:
-    soil_word = """<p style="background:yellow" width:250px>TOO WET</p>"""
+    soil_word = """<h1 style="background:red;color:white" width:250px>TOO WET</h1>"""
   else :
-    soil_word = """<p style="background:red" width:250px>ERROR DEGREE</p>"""
+    soil_word = """<h1 style="background:black;color:white" width:250px>ERROR DEGREE</h1>"""
   
   html ="""
   <html>
@@ -71,3 +71,4 @@ def connect():
  do_connect(SSID,PASSWORD)
  global ip
  return ip
+
