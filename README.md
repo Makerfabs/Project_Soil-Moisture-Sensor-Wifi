@@ -18,6 +18,8 @@ Note：
 */
 ```
 
+[youtube:Lora soil moisture wifi](https://youtu.be/1wYAwtzNxJU)
+
 ![1](https://github.com/Makerfabs/Project_Soil-Moisture-Sensor-Wifi/blob/master/md_pic/image-20200624152218046.png)
 
 
